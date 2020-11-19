@@ -1,0 +1,20 @@
+.jumbotron{
+    width: 100%;
+    height: 50vh;
+    // background-image: 
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../../public/images/heros/hero-image_1.jpg");
+    background-repeat: no-repeat;
+    object-position: center;
+    object-fit: cover;
+    background-size: cover;
+    text-align: center;
+    padding-top: 5rem;
+    h3{
+      color: #fff;
+      font-weight: bold;
+      font-size: 2rem;
+    }
+    @include lg {
+
+    }
+}

@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+h3{
+  font-size: 100%;
+}
+a{
+  text-decoration: none;
+  color:#797979
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(242, 242, 242);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    position: relative;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.skip-content {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  background-color: #bf1722;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+.skip-content:focus {
+  top: 0;
+}
