@@ -1,7 +1,6 @@
-import restoranDb from '../../data/restoran-db';
 import  '../components/CardComponent';
-// import Loader from '../templates/loader';z
-const Home = {
+import FavoriteRestoran from "../../data/restoran-favorit"
+const Favorit = {
   async render() {
     const heroEl = document.querySelector('#hero');
     heroEl.classList.remove('hidden')
@@ -9,10 +8,10 @@ const Home = {
   },
 
   async afterRender() {
-    const listRestorans = await restoranDb.listRestoran();
+    const listRestorans = await FavoriteRestoran.getAllRestoran();
     const cardComponent = document.querySelector('card-component');
-    await cardComponent.setRestoran(listRestorans.restaurants);
-  },
-};
+    await cardComponent.setRestoran(listRestorans);
+   },
+}
 
-export default Home;
+export default Favorit;

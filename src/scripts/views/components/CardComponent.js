@@ -1,4 +1,4 @@
-import CONFIG from "../../globals/config";
+import CONFIG from '../../globals/config';
 
 class CardComponent extends HTMLElement {
   connectedCallback() {
@@ -9,13 +9,13 @@ class CardComponent extends HTMLElement {
     
   // }
 
-  setRestoran(restorants) {
+  async setRestoran(restorants) {
     this._restorants = restorants;
     this.render();
   }
 
   render() {
-    if(this._restorants !== null){
+    if(this._restorants){
       this._restorants.map(restoran => {
         this.innerHTML += `
          <div class="card">
