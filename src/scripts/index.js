@@ -2,8 +2,9 @@ import 'regenerator-runtime';
 import 'regenerator-runtime';
 import '../styles/sass/app.scss';
 import App from './views/app';
-// import FavoriteRestoran from './data/restoran-favorit';
 import ServiceWorkerRegist from './utils//service-worker-regist';
+import WebSocketInitiator from './utils/websocket-initiator';
+import CONFIG from './globals/config';
 
 const app = new App({
   button: document.querySelector('#hamburgerButton'),
@@ -17,14 +18,6 @@ window.addEventListener('hashchange', () => {
 
 window.addEventListener('load', () => {
   app.renderPage();
-  // const movie = {
-  //   id:1,
-  //   title: "movie.title",
-  //   overview: "movie.overview",
-  //   backdrop_path:" movie.backdrop_path",
-  //   vote_average: "movie.vote_average",
-  // };
-  // const data =  FavoriteRestoran.getRestoran(1);
-  // console.log(data);
   ServiceWorkerRegist();
+  WebSocketInitiator.init(CONFIG.WEB_SOCKET_SERVER);
 });
