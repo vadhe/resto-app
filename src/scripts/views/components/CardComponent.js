@@ -6,7 +6,7 @@ class CardComponent extends HTMLElement {
   }
 
   // attributeChangedCallback() {
-    
+
   // }
 
   async setRestoran(restorants) {
@@ -15,18 +15,21 @@ class CardComponent extends HTMLElement {
   }
 
   render() {
-    if(this._restorants){
-      this._restorants.map(restoran => {
+    if (this._restorants) {
+      this._restorants.map((restoran) => {
         this.innerHTML += `
          <div class="card">
-           <img src="${CONFIG.BASE_IMAGE_URL}${restoran.pictureId}" alt="${restoran.pictureId}"></img>
+           <img src="${CONFIG.BASE_IMAGE_URL}${restoran.pictureId}"
+            alt="${restoran.pictureId}" crossorigin="anonymous"></img>
            <span class="tooltip">Kota ${restoran.city}</span>
            <div class="card-content">
              <p class="rating">rating: ${restoran.rating}</p>
-             <a href="${`/#/detail/${restoran.id}`}"> <h3>${restoran.name}</h3></a>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur commodi reiciendis in! Nisi natus minima explicabo. Enim, accusantium? Sit distinctio magnam architecto, minima odit ut officia nulla non! A, doloremque.</p>
+             <a href="${`/#/detail/${restoran.id}`}">
+               <h2>${restoran.name}</h2>
+             </a>
+             <p>>${restoran.description}</p>
            </div>
-        </div>`
+        </div>`;
       });
     }
   }
@@ -34,7 +37,5 @@ class CardComponent extends HTMLElement {
 customElements.define('card-component', CardComponent);
 
 export default CardComponent;
-
-
 
 

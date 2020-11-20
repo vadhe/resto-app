@@ -2,7 +2,7 @@ import 'regenerator-runtime';
 import 'regenerator-runtime';
 import '../styles/sass/app.scss';
 import App from './views/app';
-import ServiceWorkerRegist from './utils//service-worker-regist';
+import serviceWorkerRegist from './utils//service-worker-regist';
 import WebSocketInitiator from './utils/websocket-initiator';
 import CONFIG from './globals/config';
 
@@ -18,6 +18,6 @@ window.addEventListener('hashchange', () => {
 
 window.addEventListener('load', () => {
   app.renderPage();
-  ServiceWorkerRegist();
+  serviceWorkerRegist();
   WebSocketInitiator.init(CONFIG.WEB_SOCKET_SERVER);
 });

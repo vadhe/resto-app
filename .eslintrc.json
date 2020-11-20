@@ -11,6 +11,7 @@
         "sourceType": "module"
     },
     "rules": {
-        "FunctionDeclaration": true
+        "require-jsdoc" : 0,
+        "max-len": 0
     }
 }

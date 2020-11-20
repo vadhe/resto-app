@@ -1,10 +1,9 @@
 import restoranDb from '../../data/restoran-db';
-import  '../components/CardComponent';
-// import Loader from '../templates/loader';z
+import '../components/CardComponent';
 const Home = {
   async render() {
     const heroEl = document.querySelector('#hero');
-    heroEl.classList.remove('hidden')
+    heroEl.classList.remove('hidden');
     return `<card-component></card-component>`;
   },
 

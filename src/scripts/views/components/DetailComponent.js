@@ -1,19 +1,19 @@
 import CONFIG from '../../globals/config';
 class DetailComponent extends HTMLElement {
   connectedCallback() {
-      this.render();
+    this.render();
   }
   attributeChangedCallback() {
     this.render();
   }
-  
-  setDetailRestorants(restorants)  {
+
+  setDetailRestorants(restorants) {
     this._restorants = restorants;
     this.render();
   }
   render() {
-      if(this._restorants){
-          this.innerHTML = `
+    if (this._restorants) {
+      this.innerHTML = `
           <div class="detail">
             <div class="detail__header">
               <h3>${this._restorants.name}</h3>
@@ -29,15 +29,15 @@ class DetailComponent extends HTMLElement {
             </div>
           </div>
           <div class="review">
-            ${this._restorants.customerReviews.map(review => `
+            ${this._restorants.customerReviews.map((review) => `
             <div class="review__main">
               <h3>${review.name}</h3>
               <p>${review.review}</p>
               <span class="date">${review.date}</span>
             </div>
             ` ).join('')}
-          </div>`
-      }
+          </div>`;
+    }
   }
 }
 

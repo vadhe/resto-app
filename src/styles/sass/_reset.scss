@@ -3,12 +3,16 @@
     margin: 0;
     box-sizing: border-box;
   }
-h3{
-  font-size: 100%;
+h1,h2,h3{
+  font-size: 100;
+}
+button,a{
+  min-width: 44px;
+  min-height: 44px;
 }
 a{
   text-decoration: none;
-  color:#797979
+  color:#797979;
 }
 body {
     font-family: 'Poppins', sans-serif;

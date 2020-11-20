@@ -1,6 +1,6 @@
-/* 
-tidak di gunakan karena saya bingung bagaimana caranya agar bisa 
-menghubungkan component button dengan detail 
+/*
+tidak di gunakan karena saya bingung bagaimana caranya agar bisa
+menghubungkan component button dengan detail
 */
 // class ButtonLiked extends HTMLElement {
 //     connectedCallback(){
@@ -33,8 +33,8 @@ menghubungkan component button dengan detail
 //             <i class="fa fa-heart" aria-hidden="true"></i>
 //           </button>`
 //     }
-    
+
 // }
-  
+
 // customElements.define('button-liked', ButtonLiked);
 // export default ButtonLiked;

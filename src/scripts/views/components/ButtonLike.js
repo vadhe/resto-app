@@ -1,6 +1,6 @@
-/* 
-  tidak di gunakan karena saya bingung bagaimana 
-  caranya agar bisa menghubungkan component button dengan detail page 
+/*
+  tidak di gunakan karena saya bingung bagaimana
+  caranya agar bisa menghubungkan component button dengan detail page
 */
 // class ButtonLike extends HTMLElement {
 //   connectedCallback(){
@@ -37,7 +37,7 @@
 //        </button>`;
 //       //  this.querySelector("#likeButton").addEventListener("click", this.setStoreFavorit);
 //   }
-  
+
 // }
 
 // customElements.define('button-like', ButtonLike);
