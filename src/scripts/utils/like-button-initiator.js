@@ -1,17 +1,17 @@
 import FavoriteRestoran from '../data/restoran-favorit';
-import { createLikeButtonTemplate, createLikedButtonTemplate } from '../views/components/ButtonCreateLike';
+import {createLikeButtonTemplate, createLikedButtonTemplate} from '../views/components/ButtonCreateLike';
 
 const LikeButtonInitiator = {
-  async init({ likeButtonContainer, restoran }) {
+  async init({likeButtonContainer, restoran}) {
     this._likeButtonContainer = likeButtonContainer;
     this._restoran = restoran;
-    
+
     await this._renderButton();
   },
 
   async _renderButton() {
-    console.log(this._restora)
-    const { id } = this._restoran;
+    console.log(this._restora);
+    const {id} = this._restoran;
 
     if (await this._restoLiked(id)) {
       this._renderLiked();

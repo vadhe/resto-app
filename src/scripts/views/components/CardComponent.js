@@ -5,10 +5,6 @@ class CardComponent extends HTMLElement {
     this.render();
   }
 
-  // attributeChangedCallback() {
-
-  // }
-
   async setRestoran(restorants) {
     this._restorants = restorants;
     this.render();
@@ -27,7 +23,7 @@ class CardComponent extends HTMLElement {
              <a href="${`/#/detail/${restoran.id}`}">
                <h2>${restoran.name}</h2>
              </a>
-             <p>>${restoran.description}</p>
+             <p class="description">${restoran.description}</p>
            </div>
         </div>`;
       });
