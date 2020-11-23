@@ -6,11 +6,14 @@ const Favorit = {
     heroEl.classList.remove('hidden');
     return `<card-component></card-component>`;
   },
-
   async afterRender() {
-    const listRestorans = await FavoriteRestoran.getAllRestoran();
-    const cardComponent = document.querySelector('card-component');
-    await cardComponent.setRestoran(listRestorans);
+    try {
+      const listRestorans = await FavoriteRestoran.getAllRestoran();
+      const cardComponent = document.querySelector('card-component');
+      await cardComponent.setRestoran(listRestorans);
+    } catch {
+      alert('Anda Belum Mempunyai Restoran Favorit');
+    }
   },
 };
 

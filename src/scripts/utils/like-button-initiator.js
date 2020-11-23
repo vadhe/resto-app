@@ -10,7 +10,6 @@ const LikeButtonInitiator = {
   },
 
   async _renderButton() {
-    console.log(this._restora);
     const {id} = this._restoran;
 
     if (await this._restoLiked(id)) {

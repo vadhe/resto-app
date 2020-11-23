@@ -16,14 +16,14 @@ detail-component{
         width: 100%;
     }
     h3{
-        margin: 1rem 0;
+        margin-bottom: 1rem ;
     }
     p{
-        font-size: 0.8rem;
-        span{
-          font-size: 1rem;
-          font-weight: bold;
-        }
+      line-height: 2rem;
+      span{
+        font-weight: bold;
+        color: #000;
+      }
     }
    }
    .review{
@@ -55,9 +55,39 @@ detail-component{
         grid-auto-rows: auto;
         grid-gap: 1rem;
         align-items: center;
-        p{
-            font-size: 1rem;
+        .detail__body{
+            margin-top: 8rem;
         }
       }
    }
+}
+
+
+.lds-circle {
+  display: inline-block;
+  transform: translateZ(1px);
+}
+.lds-circle > div {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  background: #fff;
+  animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+@keyframes lds-circle {
+  0%, 100% {
+    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(1800deg);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  100% {
+    transform: rotateY(3600deg);
+  }
 }

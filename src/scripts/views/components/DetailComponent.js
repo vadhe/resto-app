@@ -22,9 +22,9 @@ class DetailComponent extends HTMLElement {
             <div class="detail__body">
               <p class="description">${this._restorants.description}"</p>
               <address>Kota: ${this._restorants.city} jln ${this._restorants.address}</address>
-              <div>kategori: ${this._restorants.categories.map((res)=> res.name).join(',')}</div>
-              <div><span>Daftar Makanan: </span>${this._restorants.menus.foods.map((res)=> res.name).join(', ')}</div>
-              <div><span> Daftar Minuman: </span>${this._restorants.menus.drinks.map((res)=> res.name).join(', ')}</div>
+              <p>kategori: ${this._restorants.categories.map((res)=> res.name).join(',')}</p>
+              <p><span>Daftar Makanan: </span>${this._restorants.menus.foods.map((res)=> res.name).join(', ')}</p>
+              <p><span> Daftar Minuman: </span>${this._restorants.menus.drinks.map((res)=> res.name).join(', ')}</p>
               <h3>Rating Restouran: <span class="rating">${this._restorants.rating}</span></h3>
             </div>
           </div>
@@ -42,4 +42,4 @@ class DetailComponent extends HTMLElement {
 }
 
 customElements.define('detail-component', DetailComponent);
-export default DetailComponent;
+

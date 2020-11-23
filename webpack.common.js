@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ServiceWorkerWebpackPlugin = require('serviceworker-webpack-plugin');
+const WebpackPwaManifest = require('webpack-pwa-manifest');
 const path = require('path');
 
 module.exports = {
@@ -61,6 +62,48 @@ module.exports = {
     }),
     new ServiceWorkerWebpackPlugin({
       entry: path.resolve(__dirname, 'src/scripts/service-worker.js'),
+    }),
+    new WebpackPwaManifest({
+      name: 'Resto App',
+      short_name: 'Resto App',
+      description: 'Resto Suka Suka',
+      background_color: '#ffffff',
+      crossorigin: 'use-credentials',
+      options: {
+        filename: 'manifest.json',
+        name: 'App',
+        orientation: 'portrait',
+        display: 'fullscreen',
+        start_url: '.',
+        crossorigin: null,
+        inject: true,
+        fingerprints: true,
+        ios: false,
+        publicPath: null,
+        includeDirectory: true,
+      },
+      icons: [
+        {
+          src: path.resolve('src/public/icons/icon-192x192.png'),
+          size: '1024x1024',
+          purpose: 'any maskable',
+        },
+        {
+          src: path.resolve('src/public/icons/icon-256x256.png'),
+          size: '1024x1024',
+          purpose: 'any maskable',
+        },
+        {
+          src: path.resolve('src/public/icons/icon-384x384.png'),
+          size: '1024x1024',
+          purpose: 'any maskable',
+        },
+        {
+          src: path.resolve('src/public/icons/icon-512x512.png'),
+          size: '1024x1024',
+          purpose: 'any maskable',
+        },
+      ],
     }),
   ],
 };
