@@ -1,7 +1,8 @@
 import 'regenerator-runtime';
-import 'regenerator-runtime';
 import '../styles/sass/app.scss';
 import App from './views/app';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 import serviceWorkerRegist from './utils//service-worker-regist';
 import WebSocketInitiator from './utils/websocket-initiator';
 import CONFIG from './globals/config';

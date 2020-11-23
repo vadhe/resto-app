@@ -16,7 +16,7 @@ class CardComponent extends HTMLElement {
         this._restorants.map((restoran) => {
           this.innerHTML += `
            <div class="card">
-             <img src="${CONFIG.BASE_IMAGE_URL}${restoran.pictureId}"
+             <img class="lazyload" data-src="${CONFIG.BASE_IMAGE_URL}${restoran.pictureId}"
               alt="${restoran.pictureId}" crossorigin="anonymous"></img>
              <span class="tooltip">Kota ${restoran.city}</span>
              <div class="card-content">

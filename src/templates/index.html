@@ -18,8 +18,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../public/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="../public/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../public/favicon/favicon-16x16.png">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <script src="https://use.fontawesome.com/b070c8f1df.js"></script>
     <title>Suka Suka Resto</title>
 </head>
 <body>
@@ -40,7 +38,17 @@
     </nav>
   </header>
   <div id="hero" class="jumbotron">
-    <h2>Selamat Datang Di Suka Suka Resto Cari Resto Favoritmu</h2>
+    <div class="text-jumbotron">
+      <h2>Selamat Datang Di Suka Suka Resto Cari Resto Favoritmu</h2>
+    </div>
+    <picture>
+      <!-- <source type="image/webp" srcset="./images/hero-large.jpg.webp"> -->
+      <source type="image/jpeg" srcset="./images/heros/hero.webp">
+      <img src="./images/heros/hero-large.jpg" width="640" height="360"
+           srcset="./images/heros/hero-small.jpg 480w, ./images/heros/hero-large.jpg 800w"
+           sizes="(max-width: 600px) 480px, 800px"
+           alt="hero-image">
+   </picture>
   </div>
   <main id="mainContent"></main>
   <!-- <load-der></load-der> -->

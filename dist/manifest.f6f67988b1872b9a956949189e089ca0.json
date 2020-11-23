@@ -1,0 +1,48 @@
+{
+  "icons": [
+    {
+      "src": "icon_1024x1024.8c496955f3e731dea01b924a273f5dd6.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon_1024x1024.0b04121cc780ffa375ac1cadb28ab861.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon_1024x1024.278d0e34da31914afd8abac383ac6eef.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon_1024x1024.fca4d2cff41922c988f4e0156d8ce9bb.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "name": "Resto App",
+  "short_name": "Resto App",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "Resto Suka Suka",
+  "background_color": "#ffffff",
+  "options": {
+    "filename": "manifest.json",
+    "name": "App",
+    "orientation": "portrait",
+    "display": "fullscreen",
+    "start_url": ".",
+    "crossorigin": null,
+    "inject": true,
+    "fingerprints": true,
+    "ios": false,
+    "publicPath": null,
+    "includeDirectory": true
+  }
+}
