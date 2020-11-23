@@ -24,6 +24,8 @@
     "eslint-config-google": "^0.14.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^4.5.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-webpack-plugin": "^2.4.2",
     "node-sass": "^5.0.0",
     "sass": "^1.28.0",
     "sass-loader": "^10.0.5",
