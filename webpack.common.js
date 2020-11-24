@@ -9,10 +9,10 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 const path = require('path');
 
 module.exports = {
-  entry: {
-    app: path.resolve(__dirname, 'src/scripts/index.js'),
-    thirdParty: path.resolve(__dirname, 'src/scripts/thirdparty.js'),
-  },
+  entry: [
+    './src/scripts/index.js',
+    './src/scripts/thirdparty.js',
+  ],
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
