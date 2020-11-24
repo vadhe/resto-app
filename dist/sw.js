@@ -1,7 +1,6 @@
 var serviceWorkerOption = {
   "assets": [
     "/bundle.js",
-    "/1.bundle.js",
     "/fonts/fontawesome-webfont.woff2",
     "/favicon/android-icon-144x144.png",
     "/favicon/android-icon-192x192.png",

@@ -18,6 +18,7 @@ describe('create a fiuture Like the Restoran', () => {
     });
 
     expect(document.querySelector('[aria-label="like this restoran"]')).toBeTruthy();
+    // expect(document.querySelector('button #likeButton')).toBeTruthy();
   });
 
   it('should not show the unlike button when the restoran has not been liked before', async () => {
@@ -61,7 +62,7 @@ describe('create a fiuture Like the Restoran', () => {
     RestoranFavorit.deleteRestoran(1);
   });
 
-  xit('should not add a restoran when it has no id', async () => {
+  it('should not add a restoran when it has no id', async () => {
     await LikeButtonInitiator.init({
       likeButtonContainer: document.querySelector('#likeButtonContainer'),
       restoran: {},
