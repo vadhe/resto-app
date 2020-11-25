@@ -21,7 +21,7 @@ class CardComponent extends HTMLElement {
              <span class="tooltip">Kota ${restoran.city}</span>
              <div class="card-content">
                <p class="rating">rating: ${restoran.rating}</p>
-               <a href="${`/#/detail/${restoran.id}`}">
+               <a class="restoran-title" href="${`/#/detail/${restoran.id}`}">
                  <h3>${restoran.name}</h3>
                </a>
                <p class="description">${restoran.description}</p>
@@ -29,7 +29,7 @@ class CardComponent extends HTMLElement {
           </div>`;
         });
       } else {
-        this.innerHTML = `<div> Restoran Favorit Belum Masih Kosong</div>`;
+        this.innerHTML = `<div id="empaty"> Restoran Favorit  Masih Kosong</div>`;
       }
     }
   }

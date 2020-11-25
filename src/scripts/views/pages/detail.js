@@ -1,5 +1,6 @@
 import UrlParser from '../../routes/url-parser';
 import restoranDb from '../../data/restoran-db';
+import RestoranFavorit from '../../data/restoran-favorit';
 import '../components/DetailComponent';
 // import '../components/Loader';
 import LikeButtonInitiator from '../../utils/like-button-initiator';
@@ -23,6 +24,7 @@ const DetailResto = {
       detailComponent.setDetailRestorants(dataDetailResto.restaurant);
       await LikeButtonInitiator.init({
         likeButtonContainer: document.querySelector('#likeButtonContainer'),
+        favoriteRestorans: RestoranFavorit,
         restoran: {
           ...dataDetailResto.restaurant,
         },
