@@ -17,7 +17,7 @@ class DetailComponent extends HTMLElement {
           <div class="detail">
             <div class="detail__header">
               <h3>${this._restorants.name}</h3>
-              <img src="${CONFIG.BASE_IMAGE_URL}${this._restorants.pictureId}" alt="${this._restorants.name}"/>
+              <img src="${CONFIG.BASE_IMAGE_URL}${this._restorants.pictureId}" crossorigin="anonymous" alt="${this._restorants.name}"/>
             </div>
             <div class="detail__body">
               <p class="description">${this._restorants.description}"</p>
