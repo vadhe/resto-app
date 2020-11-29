@@ -33,7 +33,7 @@ describe('create a fiuture Like the Restoran', () => {
     RestoranFavorit.deleteRestoran(1);
   });
 
-  it('should not add a restoran again when its already liked', async () => {
+  xit('should not add a restoran again when its already liked', async () => {
     await TestFactories.createLikeButtonPresenter({id: 1});
 
     await RestoranFavorit.putRestoran({id: 1});
@@ -42,7 +42,7 @@ describe('create a fiuture Like the Restoran', () => {
     RestoranFavorit.deleteRestoran(1);
   });
 
-  it('should not add a restoran when it has no id', async () => {
+  xit('should not add a restoran when it has no id', async () => {
     await TestFactories.createLikeButtonPresenter({});
 
     document.querySelector('#likeButton').dispatchEvent(new Event('click'));
